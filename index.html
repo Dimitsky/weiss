@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/main.js" defer></script>
+  <title>Document</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo header__logo">
+        <a class="logo__link" href="#">
+          <svg class="logo__img" viewBox="0 0 135 40">
+            <use href="img/defs.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="burger" aria-expanded="false" aria-controls="menu"><span class="visually-hidden">Меню</span></button>
+      <nav class="nav header__nav" aria-label="Main navigation">
+        <div class="header__menu-wrap" id="menu">
+          <ul class="header__menu menu-header list-reset" role="menubar" aria-label="Main navigation" >
+            <li class="menu-header__item" role="none">
+              <a class="link link--menubar menu-header__link link--menubar--active" href="#" role="menuitem">Startseite</a>
+            </li>
+            <li class="menu-header__item menu-header__item--dropdown" role="none">
+              <a class="link link--menubar link--dropdown menubar__item" href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Leistungen</a>
+              <ul class="header__dropdown dropdown-header list-reset" role="menu" aria-label="Leistungen">
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 1 one</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 1 two</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 1 three</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 1 four</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-header__item menu-header__item--dropdown" role="none">
+              <a class="link link--menubar link--dropdown menu-header__link" href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Referenzen</a>
+              <ul class="header__dropdown dropdown-header list-reset" role="menu" aria-label="Referenzen">
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 2 one</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 2 two</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 2 three</a>
+                </li>
+                <li class="dropdown-header__item" role="none">
+                  <a class="dropdown-header__link" href="#" role="menuitem" tabindex="-1">Link 2 four</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-header__item" role="none">
+              <a class="link link--menubar menu-header__link" href="#" role="menuitem">Über uns</a>
+            </li>
+          </ul>
+          <button class="button button--full button--mail header__mail">Kontakt</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__wrap">
+          <span class="tag-section hero__tag-section">Ingenieur Dieter Weiss</span>
+          <h2 class="title title--h2 hero__title">Ingenieurbüro für Bau- und Vermessungswesen</h2>
+          <p class="paragraph hero__paragraph">Wenn Sie zuverlässige Ingenieure brauchen – das Ingenieurbüro Dieter Weiss ist Garant für den Er­folg Ihrer Projekte.</p>
+          <button class="button button--full">Ihr Projekt mit uns</button>
+        </div>
+        <div class="hero__img-wrap">
+          <button class="hero__img-btn-close">
+            <svg class="hero__img-btn-icon" viewBox="0 0 40 40">
+              <use href="img/defs.svg#icon-fab"></use> 
+            </svg>
+          </button>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/hero/hero-1@1x.webp 1x, 
+                      img/hero/hero-1@2x.webp 2x"
+            >
+            <source
+              type="image/jpg"
+              srcset="img/hero/hero-1@1x.jpg 1x, 
+                      img/hero/hero-1@2x.jpg 2x"
+            >
+            <img class="hero__img" src="img/hero/hero-1.jpg" alt="image description">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container services__container">
+        <div class="services__wrap">
+          <h2 class="title title--h3 services__title">Unsere Dienstleistungen</h2>
+          <p class="paragraph services__paragraph">Dienstleistung ist für unsere Mitarbeiter Herausforderung, das ist die Stärke unseres Teams. Ganz gleich, ob Verkehrsplanungen, Ver- und Ent­sorgung, Lärmschutz oder Spezialgebiete – wir bieten Rundum&#8209;Service mit:</p>
+        </div>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__card card-services">
+              <div class="card-services__img-wrap">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/services/services-1@1x.webp 1x,
+                            img/services/services-1@2x.webp 2x"
+                  >
+                  <source
+                    type="image/jpg"
+                    srcset="img/services/services-1@1x.jpg 1x,
+                            img/services/services-1@2x.jpg 2x"
+                  >
+                  <img class="card-services__img" src="img/services/services-1@1x.jpg" alt="Card description">
+                </picture>
+              </div>
+              <h4 class="title title--h4 card-services__title">Studien und Konzepte, Gesamtplanung</h4>
+              <p class="paragraph services__paragraph">Neubau und Ausbau von Straßen, Verkehrsflächen, Wasserwegen und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
+              <a class="link card-services__link" href="#">Erfahren Sie mehr</a>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__card card-services">
+              <div class="card-services__img-wrap">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/services/services-2@1x.webp 1x,
+                            img/services/services-2@2x.webp 2x"
+                  >
+                  <source
+                    type="image/jpg"
+                    srcset="img/services/services-2@1x.jpg 1x,
+                            img/services/services-2@2x.jpg 2x"
+                  >
+                  <img class="card-services__img" src="img/services/services-2@1x.jpg" alt="Card description">
+                </picture>
+              </div>
+              <h4 class="title title--h4 card-services__title">Verkehrsanlagen und Ingenieurbauwerke</h4>
+              <p class="paragraph services__paragraph">Verkehrskonzepte sind ein entscheidender Faktor jeglicher Infrastruktur. Das Ingenieurbüro Weiss hat deshalb ein Expertenteam aufgebaut.</p>
+              <a class="link card-services__link" href="#">Erfahren Sie mehr</a>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__card card-services">
+              <div class="card-services__img-wrap">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/services/services-3@1x.webp 1x,
+                            img/services/services-3@2x.webp 2x"
+                  >
+                  <source
+                    type="image/jpg"
+                    srcset="img/services/services-3@1x.jpg 1x,
+                            img/services/services-3@2x.jpg 2x"
+                  >
+                  <img class="card-services__img" src="img/services/services-3@1x.jpg" alt="Card description">
+                </picture>
+              </div>
+              <h4 class="title title--h4 card-services__title">Entwurfsvermessung, 3D&#8209;Laserscanning</h4>
+              <p class="paragraph services__paragraph">Bei Ausführung sämtlicher vermessungstechnischer Aufgaben im Leistungsbild „Ent­wurfs­vermessung“ sind wir ein leistungsstarker Partner.</p>
+              <a class="link card-services__link" href="#">Erfahren Sie mehr</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="history">
+      <div class="container history__container">
+        <div class="history__wrap">
+          <div class="history__inner">
+            <span class="tag-section history__tag-section">Unsere Firmenhistorie</span>
+            <h2 class="title title--h2 history__title">Diplom-Ingenieur Dieter Weiss gründete im Jahre 1971 sein Ingenieurbüro.</h2>
+            <p class="paragraph history__paragraph">Fast 30 Jahre lang führte er es als Alleininhaber. 1998 trat Sohn Klaus weiss als Stellvertreter an die Seite seines Vaters. Seit 2006 ist Diplom-Ingenieur Klaus Weiss alleiniger Geschäftsführer</p>
+          </div>
+          <a class="link link--white history__link" href="#">Lesen Sie weiter</a>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container info__container">
+        <div class="info__wrap">
+          <div class="info__inner">
+            <h2 class="title title--h2 info__title">Wissenswertes</h2>
+            <p class="paragraph info__paragraph">Integer massa urna, senectus maecenas in dapibus urna amet hendrerit. In ipsum, morbi amet aenean. Iaculis donec sem nullam nunc condimentum nisl non gravida in. </p>
+          </div>
+          <button class="button button--full info__blog-btn">Unser Blog</button>
+        </div>
+        <span class="tag-section info__tag-section">Unsere Letzten Beiträge</span>
+        <ul class="info__list">
+          <li class="info__item item-info">
+            <h4 class="title title--h4 item-info__title">Sed eget morbi cursus elit ipsum pellentesque</h4>
+            <p class="paragraph item-info__paragraph">Pellentesque mauris arcu nec gravida amet nec. Duis senectus cras semper cursus bibendum phasellus vehicula porttitor...</p>
+            <a class="link item-info__link" href="#">Lesen Sie weiter</a>
+          </li>
+          <li class="info__item">
+            <h4 class="title title--h4 item-info__title">Urna velit semper faucibus ac suspendisse et</h4>
+            <p class="paragraph item-info__paragraph">In nibh sodales tincidunt vitae tortor. Turpis aliquam mattis eget cursus bibendum interdum vestibulum, aliquam. Fringilla malesuada...</p>
+            <a class="link item-info__link" href="#">Lesen Sie weiter</a>
+          </li>
+          <li class="info__item">
+            <h4 class="title title--h4 item-info__title">Bibendum augue imperdiet sapien quis enim elementum</h4>
+            <p class="paragraph item-info__paragraph">Facilisi id mus at pulvinar vitae, ornare vitae scelerisque. Lacus egestas augue cursus aliquam nulla. Sed erat a scelerisque neque...</p>
+            <a class="link item-info__link" href="#">Lesen Sie weiter</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="application">
+      <div class="container application__container">
+        <div class="application__wrap">
+          <span class="tag-section application__tag-section">Mach Karriere bei uns</span>
+          <h2 class="title title--h2 application__title">Bewirb dich bei uns</h2>
+          <p class="paragraph application__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <button class="button button--full application__btn">Karriere</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrap">
+          <div class="footer__col">
+            <a class="logo__link" href="#">
+              <svg class="logo__img logo__img--footer" viewBox="0 0 135 40">
+                <use href="img/defs.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__col col-footer">
+            <h4 class="title title--h5 title--ultra-light-gray col-footer__title">Geschäftsführer</h4>
+            <p class="paragraph paragraph--light-blue">Beratender Ingenieur<br>Dipl.-Ing. Klaus Weiss</p>
+          </div>
+          <div class="footer__col col-footer">
+            <h4 class="title title--h5 title--ultra-light-gray col-footer__title">Adresse</h4>
+            <p class="paragraph paragraph--light-blue">Straßenname 7<br>12345 Stadt</p>
+          </div>
+        </div>
+        <ul class="footer__bottom bottom-footer-list">
+          <li class="bottom-footer-list__item">
+            <a class="bottom-footer-list__link" href="#">Impressum</a>
+          </li>
+          <li class="bottom-footer-list__item">
+            <a class="bottom-footer-list__link" href="#">Datenschutz</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close"><span class="visually-hidden">Закрыть окно</span></button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
